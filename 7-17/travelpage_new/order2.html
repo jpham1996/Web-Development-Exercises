@@ -1,0 +1,129 @@
+<?php
+
+$msg = "";
+
+include ('connect.php');
+
+if(isset($_POST['submit']))
+
+{
+
+$name=$_POST["name"];
+
+$item=$_POST["item"];
+
+$quant=$_POST["qt"];
+
+$addr=$_POST["addr"];
+
+$query=mysql_query("insert into orders2(name,item,qty,addr)values('$name','$item','$quant','$addr')");
+
+echo '<script>alert("your order will be delivered soon! Thank you")<script>';
+
+}
+
+else{
+
+//echo 'not clicked';
+
+}
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title></title>
+
+</head>
+
+<body>
+
+<center>Provide your details
+
+<br><br><br>
+
+<form>
+
+<table>
+
+<tr>
+
+<td>Name</td>
+
+<td><input type="text" name="name"></td>
+
+</tr>
+
+<tr>
+
+<td>Item</td>
+
+<td><select>
+
+<option>Chicken sp</option>
+
+<option>Mutton sp</option>
+
+<option>Prones sp</option>
+
+<option>Bone less chicken sp</option>
+
+<option>Dal sp with rice</option>
+
+<option>Brinjal fry sp with rice</option>
+
+<option>Pannir curry sp</option>
+
+<option>Manchuriya</option>
+
+<option>Roti</option>
+
+<option>Chapati with curma</option>
+
+<option>Chicken dum biryani</option>
+
+<option>Mutton dum biryani</option>
+
+</select></td>
+
+</tr>
+
+<tr>
+
+<td>Quantity</td>
+
+<td><input type="number" name="name"></td>
+
+</tr>
+
+<tr>
+
+<td>Address</td>
+
+<td><textarea></textarea></td>
+
+</tr>
+
+<tr>
+
+<td><input type="submit" name="submit" value="submit"></td>
+
+<td><input type="cancel" name="cancel" value="cancel"></td>
+
+<?php echo $msg;?>
+
+</tr>
+
+</table>
+
+</form>
+
+</center>
+
+</body>
+
+</html>

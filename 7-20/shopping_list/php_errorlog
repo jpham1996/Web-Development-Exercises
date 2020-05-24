@@ -1,0 +1,9 @@
+[20-Jul-2018 22:46:42 CST6CDT] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/georgerrmartin/public_html/CDA/shoppingList/register2.php on line 83
+[20-Jul-2018 22:50:40 CST6CDT] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/georgerrmartin/public_html/CDA/shoppingList/login2.php on line 12
+[20-Jul-2018 23:23:00 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/georgerrmartin/public_html/CDA/shoppingList/login2.php on line 29
+[20-Jul-2018 23:23:15 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/georgerrmartin/public_html/CDA/shoppingList/login2.php on line 29
+[20-Jul-2018 23:23:18 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/georgerrmartin/public_html/CDA/shoppingList/login2.php on line 29
+[20-Jul-2018 23:23:24 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/georgerrmartin/public_html/CDA/shoppingList/login2.php on line 29
+[21-Jul-2018 16:58:39 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/georgerrmartin/public_html/CDA/shoppingList/error.php on line 15
+[21-Jul-2018 16:58:51 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/georgerrmartin/public_html/CDA/shoppingList/error.php on line 15
+[21-Jul-2018 17:21:19 CST6CDT] PHP Fatal error:  Call to a member function query() on null in /home/georgerrmartin/public_html/CDA/shoppingList/title2.php on line 10

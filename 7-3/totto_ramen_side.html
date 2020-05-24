@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Side</title>
+	<script>
+		var imgArray = new Array(4);
+		imgArray[0] = new Image;
+		imgArray[0].src = "images/side_char_siu_pork.bmp";
+		imgArray[1] = new Image;
+		imgArray[1].src = "images/side_seaweed_salad.bmp";
+		imgArray[2] = new Image;
+		imgArray[2].src = "images/side_kimchi.bmp";
+		imgArray[3] = new Image;
+		imgArray[3].src = "images/side_fried_chicken.bmp";
+		var index = 0;
+
+		function doBack()
+		{
+			if (index > 0)
+				{
+					index--;
+					document.slideshow.src = imgArray[index].src;
+				}
+			return;
+		}
+
+		function doNext()
+		{
+			if (index < 3)
+				{
+				index++;
+				document.slideshow.src = imgArray[index].src;
+				}
+			return;
+		}
+
+	</script>
+</head>
+<body bgcolor = "yellow">
+	
+	<center>
+	
+	<h2>Our Side</h2>
+	<p><img name="slideshow" src="images/side_char_siu_pork.bmp" height='300px' width='600px'></p>
+	<p>
+		<a href="javascript:doBack()">Back</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="javascript:doNext()">Next</a>
+	</p>
+
+	<hr></hr>
+	
+	<h3><a href="totto_ramen_main.html">Go back to main page.  </a></h3>
+	
+	</center>
+	
+</body>
+</html>

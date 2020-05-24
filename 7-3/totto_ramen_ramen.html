@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Ramen</title>
+	<script>
+		var imgArray = new Array(4);
+		imgArray[0] = new Image;
+		imgArray[0].src = "images/ramen_chicken_paitan.bmp";
+		imgArray[1] = new Image;
+		imgArray[1].src = "images/ramen_spicy_paitan.bmp";
+		imgArray[2] = new Image;
+		imgArray[2].src = "images/ramen_vegetable_paitan.bmp";
+		imgArray[3] = new Image;
+		imgArray[3].src = "images/ramen_miso_paitan.bmp";
+		var index = 0;
+
+		function cycle()
+		{
+			document.banner.src = imgArray[index].src;
+			index++;
+			if (index == 4)
+			{
+				index = 0;
+			}
+			setTimeout("cycle()", 500);
+			return;
+		}
+	</script>
+</head>
+<body bgcolor = yellow onLoad="cycle()">
+	
+	<center>
+	
+	<h2>Our Ramen</h2>
+	<img name="banner" src="images/ramen_chicken_paitan.bmp" height='300px' width='600px'>
+	<hr></hr>
+	
+	<h3><a href="totto_ramen_main.html">Go back to main page.  </a></h3>
+	
+	</center>
+	
+</body>
+</html>
